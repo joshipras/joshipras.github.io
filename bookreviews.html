@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Portfolio</title>
+<title>Contact Me</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <!-- Load CSS -->
 <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -16,8 +16,6 @@
 <script type="text/javascript" src="scripts/custom.js"></script>
 <!-- Load topcontrol js -->
 <script type="text/javascript" src="scripts/scrolltopcontrol.js"></script>
-<!-- Load quicksand script -->
-<script type="text/javascript" src="scripts/jquery.quicksand.js"></script>
 <!-- Load NIVO Slider -->
 <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/nivo-theme.css" type="text/css" media="screen" />
@@ -28,16 +26,35 @@
 <script type="text/javascript" src="scripts/jquery.easing-1.3.pack.js"></script>
 <script type="text/javascript" src="scripts/jquery.mousewheel-3.0.4.pack.js"></script>
 <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<!-- Load contact check -->
+<script type="text/javascript">
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('We are sorry, but there is an error:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+</script>
 </head>
 <body>
 <!--This is the START of the header-->
 <div id="topcontrol" style="position: fixed; bottom: 5px; left: 960px; opacity: 1; cursor: pointer;" title="Go to Top"></div>
 <div id="header-wrapper">
   <div id="header">
-    <div id="logo"> <a href="index.html"><img src="images/about/thumbs/me.jpg" width="160" height="150" alt="logo" align = "left" /></a> </div>
+  <div id="logo"> <a href="index.html"><img src="images/about/thumbs/me.jpg" width="160" height="150" alt="logo" align = "left" /></a> </div>
     <div id="header-text">
-      <h2>Prasanna Purushottam Joshi</h2>
-      <h6><a href="index.html">Home</a> → Portfolio</h6>
+      <h4>Book Reviews </h4>
+      <h6><a href="index.html">Home</a> → Book Reviews</h6>
     </div>
   </div>
 </div>
@@ -54,49 +71,31 @@
       <li><a href="index.html#contact">Contact</a></li>
     </ul>
   </div>
-	<!--This is the START of the footer-->
-	<div id="footer">
-		<div id="social-box">
-			<ul>
-				<li>
-					<div class="twitter"><a href="#"></a></div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<!--END of footer-->
+	
 </div>
 <!--END of menu-->
 <!--This is the START of the content-->
 <div id="content">
-  <!--This is the START of the portfolio section-->
-  <div id="recent-text">
-      <h2>These are some of my latest projects</h2>
-      <div class="star-divider"></div>
-      <h5>You can check them out on my github page</h5>
-      <div class="spacer"></div>
-    </div>
+  <!--This is the START of the contact section-->
+  <div id="bookreviews">
+    <h5 style="margin-top:10px;">These are reviews/book summaries that I've also posted on <a href = "https://www.goodreads.com/review/list/2811757-prasanna?order=d&sort=review&view=reviews" style="color:#000000;"> <b>Goodreads</b></a></h5>
+    <br>
+    <br>
+    <br>
+    <ul>
+    <li>
+      <a href = "https://www.amazon.com/Inevitable-Understanding-Technological-Forces-Future/dp/0143110373"  style="color:#000000;">
+      (4/5) The Inevitable: Understanding the 12 Technological Forces That Will Shape Our Future
+      </a>
+    </li>
+    </ul>
 
-    <div id="recent-projects-container">
-      <div class="section-description">
-        <h5>Recent projects</h5>
-      </div>
-      <div class="recent-summary">
-        <div class="recent-item"> <a class="single_image" href="https://prasannajoshi.shinyapps.io/currency-exchange-rate-tracker2/"><img src="images/portfolio/thumbs/macd.png" width="250" height="150" alt="recent2" /></a>
-        </div>
-      </div>
+   <div class="spacer"></div>
+   <p class = "text-muted"> Copyright Prasanna Joshi, 2017. All rights reserved.</p>   
 
-      <!--END of recent projects-->
-
-      <div class="spacer"></div>
-      <p class = "text-muted"> Copyright Prasanna Joshi, 2017. All rights reserved.</p>   
-
-  <!--END of portfolio section-->
+  <!--END of contact section-->
 </div>
-
-
 <!--END of content-->
-<div id="slide-panel">
-</div>
+
 </body>
 </html>
