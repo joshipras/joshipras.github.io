@@ -73,56 +73,59 @@ a {
 /******************************************************************
 General CSS
 ******************************************************************/
-									
+			
+
+
 #content {
-	width: 800px;
-	padding-top: 100px;
+	width: 1000px;
+	padding-top: 200px;
 	margin-left: 230px;
+	margin-bottom: 200px;
 	z-index: 1;
 }
 p {
-	font-family: 'Open Sans';
+	font-family: 'Arvo';
 	line-height: 1.6em;
 	color: #848484;
 	font-size: 8pt;
 }
 h1 {
-	font-family: 'Open Sans';
+	font-family: 'Arvo';
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 22pt;
 }
 h2 {
-	font-family: 'Open Sans', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 18pt;
 }
 h3 {
-	font-family: 'Open Sans', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 16pt;
 }
 h4 {
-	font-family: 'Open Sans', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 14pt;
 }
 h5 {
-	font-family: 'Open Sans', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 12pt;
 }
 h6 {
-	font-family: 'Open Sans', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
@@ -173,7 +176,7 @@ COLUMNS and FEATURES
 	clear: both;
 }
 .dropcap {
-	font-family: Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	font-size: 36px;
 	color: #333;
 	width:32px;
@@ -191,7 +194,7 @@ blockquote {
 	margin-left:20px;
 	margin-top: 60px;
 	margin-bottom: 60px;
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	color:#333;
 	text-align: center;
 	background-image: url(../images/blockquote.png);
@@ -213,7 +216,7 @@ blockquote {
 	padding-bottom: 60px;
 }
 .styled-list-dot li {
-	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	text-decoration: none;
 	font-size: 14px;
@@ -228,7 +231,7 @@ blockquote {
 	padding-bottom: 60px;
 }
 .styled-list-star li {
-	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	text-decoration: none;
 	font-size: 14px;
@@ -243,7 +246,7 @@ blockquote {
 	padding-bottom: 60px;
 }
 .readmore {
-	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	font-size: 11px;
 	text-decoration: none;
 	color: #E095B4;
@@ -296,11 +299,44 @@ a:hover {
 	margin-right: auto;
 	margin-top: 300px;
 }
+
+/* The navigation bar */
+.navbar {
+  font-family: 'Arvo', Verdana, Arial, sans-serif;
+  overflow: hidden;
+  background-color: #D3D3D3;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
 /******************************************************************
 Header & Menu CSS
 ******************************************************************/
 
 #header-wrapper {
+	position: fixed;
 	float: left;
 	background-color: #FFF;
 	width: 100%;
@@ -312,15 +348,24 @@ Header & Menu CSS
 	z-index: 5000;
 }
 #header {
+	position: fixed;
 	width: 960px;
 	position: initial;
 
 }
 #logo {
-	position: fixed;
+	position: absolute;
 	float: left;
 	width: 100px;
-	padding: 20px 0 10px 40px;
+	padding: 5px 0 0 0px;
+}
+#name {
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
+	position: absolute;
+	float: left;
+	width: 100%;
+	margin-left: 170px;
+	padding: 0px 0 0 0px;
 }
 #header-text {
 	width: 480px;
@@ -334,7 +379,7 @@ Header & Menu CSS
 	color: #d8d8d8;
 }
 #header-text a {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	color: #d8d8d8;
 	text-decoration: none;
 	font-size: 7pt;
@@ -342,9 +387,9 @@ Header & Menu CSS
 #social-box {
 	width: 96px;
 	height: 22px;
-	position: fixed;
-	bottom: 40px;
-	left: 40px;
+	position: absolute;
+	top: 200px;
+	left: 230px;
 }
 #social-box li {
 	float: center;
@@ -362,7 +407,7 @@ Header & Menu CSS
 	position: fixed;
 	padding-top: 10px;
 	padding-left: 40px;
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 }
 #main-menu a {
 	color: #707070;
@@ -379,16 +424,18 @@ Header & Menu CSS
 	color: #121212;
 }
 #footer h6 {
-	font-size: 10px;
+	font-size: 20px;
 	position: fixed;
 	bottom: 10px;
 	left: 20px;
+	display:inline;
 }
+
 .facebook a {
 	background-image: url(../images/facebook.png);
 	background-position: 0 0px;
 	display: block;
-	height: 22px;
+	height: 30px;
 	padding-left: 24px;
 	background-repeat: no-repeat
 }
@@ -451,7 +498,7 @@ Header & Menu CSS
 	display: block;
 	color: #fff;
 	text-decoration: none;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	font-weight: bold;
 	font-size: 1em;
 	margin-right: auto;
@@ -465,7 +512,7 @@ For easy editing (the main Nivo CSS is in nivo-theme.css)
 ******************************************************************/
 
 .theme-effe .nivo-caption {
-	font-family: Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	font-size: 14px;
 }
 .theme-effe .nivo-caption h1 {
@@ -477,7 +524,7 @@ For easy editing (the main Nivo CSS is in nivo-theme.css)
 }
 .theme-effe .nivo-caption .readmore {
 	position: absolute;
-	font-family: Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	font-size: 16px;
 	color: #999;
 	text-decoration: none;
@@ -520,12 +567,14 @@ Home Page CSS
 #recent-posts-container {
 	width: 800px;
 	height: 200px;
-	margin-top: 60px;
+	margin-top: 10px;
+	float:left;
 }
 #recent-projects-container {
 	width: 800px;
 	height: 200px;
-	margin-top: 60px;
+	margin-top: 200px;
+	float:left;
 }
 .section-description {
 	float: left;
@@ -537,7 +586,10 @@ Home Page CSS
 	border-color: #d8d8d8;
 }
 .recent-summary {
-	width: 600px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  	grid-gap: 10px;
+	width: 400px;
 	display: inline;
 }
 .recent-item {
@@ -560,6 +612,18 @@ Home Page CSS
 	text-align: left;
 	padding: 5px 0px 0px 0px;
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-row-gap: 300px;
+  grid-auto-rows: 100px;
+  margin-left: 230px;
+  margin-top: 50px;
+
+}
+
 .item {
 	width:125px;
 	height:125px;
@@ -678,7 +742,7 @@ Portfolio CSS
 	right: -78px;
 }
 #filter a {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	font-size: 16px;
 	color: #666;
 	display: inline-block;
@@ -732,7 +796,7 @@ This CSS is for the project page
 ******************************************************************/
 #project-title {
 	display: block;
-	font-family: Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #666;
 	text-decoration: none;
@@ -758,10 +822,10 @@ This CSS is for the project page
 	padding-left: 40px;
 }
 #work h5 {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 }
 #work li {
-	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	text-decoration: none;
 	font-size: 9pt;
@@ -780,7 +844,7 @@ This CSS is for the project page
 	text-align: left;
 }
 .project-summary h5 {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 }
 /******************************************************************
 Blog CSS
@@ -804,6 +868,8 @@ Blog CSS
 	clear: both;
 	width: 800px;
 	height: 270px;
+	margin-top: 100px;
+
 }
 .blog-item-content {
 	width: 400px;
@@ -919,9 +985,9 @@ Blog CSS
 	padding-bottom: 20px;
 }
 .social-blog-buttons {
-	display: inline;
+	display: fixed;
 	float: left;
-	height: 20px;
+	height: 80px;
 }
 .comments-block {
 	width: 720px;
@@ -938,7 +1004,7 @@ Blog CSS
 	width: 40px;
 }
 .post-author {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
@@ -954,7 +1020,7 @@ Blog CSS
 	padding-top: 15px;
 }
 .reply {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
@@ -1003,9 +1069,6 @@ Contact CSS
 	margin-bottom: 40px;
 	padding: 20px 70px 20px 0px;
 	;
-	border-right: 1px;
-	border-style: solid;
-	border-color: #d6d6d6;
 }
 #contactform {
 	padding-top: 10px;
@@ -1070,7 +1133,7 @@ This is the buttons and inputs CSS
 ******************************************************************/
 
 .button {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	font-size:12px;
 	text-align:center;
 	text-decoration:none;
