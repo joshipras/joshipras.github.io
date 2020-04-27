@@ -22,16 +22,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: 'Arvo';
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -55,15 +53,15 @@ TEXT SELECTION STYLES
 ******************************************************************/
 /* Safari, Chrome, iPhones, iPads */
 ::selection {
- background:#E095B4;
+ background:#a0bcdd;
  color:#fff;
 }
 ::-moz-selection {
- background:#E095B4;
+ background:#a0bcdd;
  color:#fff;
 }
 ::-webkit-selection {
- background:#E095B4;
+ background:#a0bcdd;
  color:#fff;
 }
 a {
@@ -249,13 +247,13 @@ blockquote {
 	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	font-size: 11px;
 	text-decoration: none;
-	color: #E095B4;
+	color: #A9A9A9;
 	float: right;
 	margin-right: 0px;
 	margin-top: 0px;
 }
 a:hover {
-	color: #E35A88;
+	color: black;
 }
 .spacer {
 	height: 1px;
@@ -308,6 +306,7 @@ a:hover {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  z-index:99
 }
 
 /* Links inside the navbar */
@@ -528,8 +527,8 @@ For easy editing (the main Nivo CSS is in nivo-theme.css)
 	font-size: 16px;
 	color: #999;
 	text-decoration: none;
-	bottom: 20px;
-	left: 160px;
+	bottom: 0px;
+	left: 0px;
 }
 /******************************************************************
 IMG Hovers
@@ -570,11 +569,24 @@ Home Page CSS
 	margin-top: 10px;
 	float:left;
 }
+#container-title h1{
+	width: 800px;
+	height: 200px;
+	margin-top: 100px;
+	margin-left: 300px;
+	margin-bottom: 10px;
+	float:center; 
+	text-align: center;
+}
+
 #recent-projects-container {
 	width: 800px;
 	height: 200px;
-	margin-top: 200px;
+	margin-top: 10px;
 	float:left;
+	text-align: center;
+    margin-left: 230px;
+	justify-content: center;
 }
 .section-description {
 	float: left;
@@ -588,7 +600,7 @@ Home Page CSS
 .recent-summary {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-  	grid-gap: 10px;
+  	grid-gap: 20px;
 	width: 400px;
 	display: inline;
 }
@@ -613,14 +625,29 @@ Home Page CSS
 	padding: 5px 0px 0px 0px;
 }
 
+.recent-summary a {
+	width: 250px;
+	font-weight: bold;
+	text-align: left;
+	padding: 5px 0px 0px 0px;
+}
+
 .wrapper {
   display: grid;
+  width:1100px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  grid-row-gap: 300px;
-  grid-auto-rows: 100px;
+  grid-row-gap: 400px;
+  grid-auto-rows: 80px;
   margin-left: 230px;
-  margin-top: 50px;
+  margin-top: 200px;
+  margin-bottom: 0px;
+  text-align:center;
+  align-items: center;
+}
+
+.wrapper h3 {
+  margin:0;
 
 }
 
@@ -642,19 +669,23 @@ Home Page CSS
 #recent-text h5 {
 	padding-bottom: 0px;
 }
-#recent-projects-text {
-	text-align: center;
-}
-#recent-projects-text h5 {
+
+#recent-projects-text li ul h3 h5 h6 a{
+	margin-left: 100px;
 	padding-bottom: 0px;
+
 }
 #recent-blog-text {
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	text-align: center;
 }
 #recent-blog-text h5 {
 	padding-bottom: 0px;
 }
-
+#recent-blog-text {
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
+	text-align: center;
+}
 .recent-gallery {
 	text-align: center;
 	margin-left: auto;
@@ -765,6 +796,7 @@ Portfolio CSS
 	overflow:hidden;
 	width: 720px;
 	margin:0 auto;
+
 }
 #container li {
 	float: left;
@@ -851,6 +883,7 @@ Blog CSS
 ******************************************************************/
 
 #blog {
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	display: block;
 	width: 1000px;
 	margin-top: 10px;

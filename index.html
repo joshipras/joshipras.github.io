@@ -6,12 +6,18 @@
 <title>Prasanna Joshi</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <!-- Load CSS -->
-<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="product.css">
+
+<!-- Load Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 <!-- Load Fonts -->
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Arvo" />
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic" type="text/css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic" type="text/css">
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold" type="text/css" />
+
 <!-- Load jQuery library -->
 <script type="text/javascript" src="scripts/jquery-1.6.2.min.js"></script>
 <!-- Load custom js -->
@@ -28,8 +34,8 @@
 <script type="text/javascript" src="scripts/jquery.fancybox-1.3.4.pack.js"></script>
 <script type="text/javascript" src="scripts/jquery.easing-1.3.pack.js"></script>
 <script type="text/javascript" src="scripts/jquery.mousewheel-3.0.4.pack.js"></script>
-<link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
-<script type="text/javascript">
+<link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" type="text/css" media="screen"/>
+<script type="text/javascript">  
 function MM_validateForm() { //v4.0
   if (document.getElementById){
     var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
@@ -47,190 +53,167 @@ function MM_validateForm() { //v4.0
     document.MM_returnValue = (errors == '');
 } }
 </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
+<!--Go to top button-->
 <div id="topcontrol" style="position: static; bottom: 5px; left: 800px; opacity: 1; cursor: pointer;" title="Go to Top"></div>
 
-<!--This is the START of the header-->
-<div id="header">
-    <div class="navbar">
-      <a href="index.html#contact">Contact</a>
-      <a href="index.html#bookreviews">Book Reviews</a>
-      <a href="index.html#recent-blog-text">Blog</a>
-      <a href="index.html#recent-projects">Portfolio</a>
-      <a href="index.html#timeline">About</a>  
-      <a href="index.html#content">Home</a>
-    </div>
-    <div id="header-text">
-        <div id="logo"> 
-          <a href="index.html"><img src="images/about/thumbs/me.jpg" width="160" height="150" alt="logo" align = "left" /></a> 
-        </div>
-        <div id = "name">
-          <h1 style=font-size:40px> Prasanna Purushottam Joshi </h1> 
-        </div>    
-    </div>
-
-    <div id="footer">
-      <div id="social-box">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/prasannajoshi1/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-          <li><a href="https://github.com/joshipras"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-          <li><a href="https://twitter.com/prasanna2"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+<!--Top Navbar-->
+<nav class="navbar navbar-expand-md fixed-top navbar-light" style="background-color: #F5F5F5;">
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="index.html#header-text">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#timeline-title">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#recent-projects-title">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#recent-blog-text">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#bookreviews">Book Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
         </ul>
-      </div>
     </div>
+</nav>
+<!--End of Top Navbar-->
 
-
-<!--END of header-->
-</div>
-
-<!--This is the START of the menu-->
-<!--div id="menu-wrapper">
-  <div id="main-menu">
-    <ul>
-      <li><h2>Prasanna Joshi</h2></li>
-      <li><a href="index.html#content">Home</a></li>
-      <li><a href="index.html#timeline">About</a></li>
-      <li><a href="index.html#recent-projects-text">Portfolio</a></li>
-      <li><a href="index.html#recent-blog-text">Blog</a></li>
-      <li><a href="bookreviews.html">Book Reviews</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
+<!--Name, Photo-->
+<div id="header-text">  
+    <div id="logo"> 
+        <br>
+        <a href="index.html"><img src="images/about/thumbs/me.jpg" width="160" height="150" alt="logo" align = "left" /></a> 
+    </div>
     
-    <div id="footer">
-      <div id="social-box">
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/prasannajoshi1/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/joshipras"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/prasanna2"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <div id = "name">
+        <br><br>
+        <h1> Prasanna Purushottam Joshi </h1> 
+        <h3> Senior Data Analyst, Cohen Veterans Network </h3> 
 
+    </div>    
+</div>
+<!--End of Name, Photo-->
+
+
+<!--Social Media Box-->
+<div id="footer">
+  <div id="social-box">
+    <br>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/prasannajoshi1/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+      <li><a href="https://github.com/joshipras"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/prasanna2"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+    </ul>
   </div>
 </div>
-<!--END of menu-->
-
+<!--End of Social Media Box-->
 
 
 <!--This is the START of the content-->
 <div id="content">
-    <h5 > I am a mathematical optimization enthusiast with professional experience in Data Science, Supply Chain Management and Lean Process Optimization. I completed my Master's in Operations Research from Northeastern University. I have worked in a variety of industries: mental health care, technology, pharmaceutical, investment research, automobile and manufacturing.</h5>
-
+    <br>
+    <h6> I am a mathematical optimization enthusiast with professional experience in Data Science, Supply Chain Management and Lean Process Optimization. I completed my Master's in Operations Research from Northeastern University. I have worked in a variety of industries: mental health care, technology, pharmaceutical, investment research, automobile and manufacturing.</h6>
 </div>
 <!--END of content-->
 
-<br><br>
-<div id="timeline" style="position:relative; margin-left: 6cm; margin-right: 6cm; margin-topf: 50px; margin-bottom: 100px">  
-<h1 align = 'center'>Professional Experience</h1> 
 
-	  <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1lkJh-npDMudFwIz0aP-2mmjw3NhazK5lWZR4y2jKDNo&font=Default&lang=en&initial_zoom=3&height=650' width='100%' height='600' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='10'></iframe>
-<!--END of content-->    
+<!--This is the START of the Timeline-->
+<hr>
+<div id = 'timeline-title' class="container-title">
+    <h1 align = 'center'>Professional Experience </h1>
 </div>
 
+<div id="timeline" style="position:relative; margin-left: 6cm; margin-right: 6cm; margin-top: 0px; margin-bottom: 0px">  
+	  <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1lkJh-npDMudFwIz0aP-2mmjw3NhazK5lWZR4y2jKDNo&font=Default&lang=en&initial_zoom=3&height=650' width='100%' height='600' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+</div>
+<!--This is the START of the Timeline-->
+
+
+<!--This is the START of Projects-->
+<div id = "recent-projects-title">
+    <br><hr>
+    <h1 align = 'center'>Projects </h1>
+</div>
+<br><br>
 <div id = 'recent-projects' class="recent-projects-container">
-    <h1 align='center'> Projects </h1>
     <div class="wrapper">
         <div class="recent-summary">
-        <h3 align = 'center'> MACD Tracker App <h3>  
+        <h4> MACD Tracker App <h4>  
             <div class="recent-item"> <a class="single_image" href="https://prasannajoshi.shinyapps.io/currency-exchange-rate-tracker2/"><img src="images/portfolio/thumbs/macd.png" width="450" height="300" alt="recent2" /></a>
             </div>
         </div>    
         <div class="recent-summary">
-        <h3 align = 'center'> Image Classification with CNN <h3>  
+        <h4> Image Classification with CNN <h4>  
             <div class="recent-item"> <a class="single_image" href="https://github.com/joshipras/data-science-portfolio/blob/master/deep-learning/cnn.ipynb"><img src="images/portfolio/thumbs/f-mnist.png" width="450" height="300" alt="recent2" /></a>
             </div>
         </div> 
         <div class="recent-summary">
-        <h3 align = 'center'> Gradient Boosting Trees with Python <h3>  
-            <div class="recent-item"> <a class="single_image" href="https://github.com/joshipras/data-science-portfolio/blob/master/machine-learning/gbm.ipynb"><img src="images/portfolio/thumbs/bin_tree.jpg" width="450" height="400" alt="recent2" /></a>
+        <h4> Gradient Boosting Trees with Python <h4>  
+            <div class="recent-item"> <a class="single_image" href="https://github.com/joshipras/data-science-portfolio/blob/master/machine-learning/gbm.ipynb"><img src="images/portfolio/thumbs/bin_tree.jpg" width="350" height="300" alt="recent2" /></a>
             </div>
         </div> 
         <div class="recent-summary">
-        <h3 align = 'center'> Neural Networks from Scratch using Python <h3>  
+        <h4> Neural Networks from Scratch using Python <h4>  
             <div class="recent-item"> <a class="single_image" href="https://github.com/joshipras/data-science-portfolio/blob/master/machine-learning/netural-networks.ipynb"><img src="images/portfolio/thumbs/nnets.jpeg" width="450" height="300" alt="recent2" /></a>
             </div>
         </div>
         <div></div>
     </div>
 </div>
+<!--This is the End of Projects-->
 
+<!--This is the Start of Blog-->
+<hr>
 <div id="content">
-  <div id="recent-blog-text">
-    <h1>Articles</h1>
-  </div>
+    <div id="recent-blog-text">
+        <h1>Articles</h1>
+    </div>
    
-  <!--This is the START of the blog section-->
-<div id="blog">
-
-<!--This is the START of the recent posts-->
-      <!--END of recent posts-->
-    <div class="blog-item"> <a href="https://www.linkedin.com/pulse/measure-intangibles-structure-your-decisions-prasanna-joshi"><img class="single_image" src="images/blog/thumbs/decisions.jpg" width="280" height="180" alt="blog1" /></a>
-      <div class="blog-item-info">
-      </div>
-      <div class="blog-item-content"> <a href="blog-single.html">
-        <h5>Measure your intangibles, Structure your decisions!</h5>
-        </a>
-        <h6>The doors we open and close each day decide the lives we live. ~ Flora Whittemore.
-        The quote beautifully sums up the role of decisions in our lives. Any activity we do is a result of our decision to not pursue any other activity that we could do.</h6>
+    <!--This is the START of the blog section-->
+    <div id="blog">
+        <div class="blog-item"> 
+            <a href="https://www.linkedin.com/pulse/measure-intangibles-structure-your-decisions-prasanna-joshi"><img class="single_image" src="images/blog/thumbs/decisions.jpg" width="320" height="200" alt="blog1"/></a>
+            <div class="blog-item-content"> 
+                <a href="https://www.linkedin.com/pulse/measure-intangibles-structure-your-decisions-prasanna-joshi/"><h5>Measure your intangibles, Structure your decisions!</h5></a>
+                <h6>The doors we open and close each day decide the lives we live. ~ Flora Whittemore.
+                The quote beautifully sums up the role of decisions in our lives. Any activity we do is a result of our decision to not pursue any other activity that we could do.</h6>
                 <a class="readmore" href="https://www.linkedin.com/pulse/measure-intangibles-structure-your-decisions-prasanna-joshi">read more →</a>   <br />
-      </div>
+            </div>
+        </div>
+        <div class="blog-item"> 
+            <a href="https://www.linkedin.com/pulse/hypothesis-testing-made-easy-prasanna-joshi"><img class="single_image" src="images/blog/thumbs/hypothesis.png" width="320" height="200" alt="blog2" /></a>
+            <div class="blog-item-content">
+                <a href="https://www.linkedin.com/pulse/hypothesis-testing-made-easy-prasanna-joshi"><h5>Hypothesis Testing made easy!</h5></a>
+                <h6>My friend Aaditya Bhat and I are attempting at expressing statistical concepts in simple terms. This post aims to explain statistical hypothesis testing.</h6><a class="readmore" href="https://www.linkedin.com/pulse/hypothesis-testing-made-easy-prasanna-joshi">read more →</a> 
+            </div>
+        </div>
     </div>
-    <div class="blog-item"> <a href="https://www.linkedin.com/pulse/hypothesis-testing-made-easy-prasanna-joshi"><img class="single_image" src="images/blog/thumbs/hypothesis.png" width="280" height="180" alt="blog2" /></a>
-      <div class="blog-item-content">
-        <!--div class="blog-item-info">
-          <div class="user">admin</div>
-          <div class="comments">6 comments</div>
-          <div class="tags">psd news blog post</div>
-        </div!-->
-        <a href="https://www.linkedin.com/pulse/hypothesis-testing-made-easy-prasanna-joshi">
-        <h5>Hypothesis Testing made easy!</h5>
-        </a>
-        <h6>My friend Aaditya Bhat and I are attempting at expressing statistical concepts in simple terms. This post aims to explain statistical hypothesis testing.</h6>
-        <a class="readmore" href="https://www.linkedin.com/pulse/hypothesis-testing-made-easy-prasanna-joshi">read more →</a> <br />
-      </div>
-    </div>
-    
-  <!--END of blog section-->
-  </div>
-
 </div>
 
-  <div id="recent-blog-text">
-    <h2>Book Reviews</h2>
-     <h5 style="margin-top:10px;">These are reviews/book summaries that I've also posted on <a href = "https://www.goodreads.com/review/list/2811757-prasanna?order=d&sort=review&view=reviews" style="color:#000000;"> <b>Goodreads</b></a></h5>
-  </div>
-   
-  <!--This is the START of the blog section-->
-  <div id="blog">
-      <!--This is the START of the book reviews section-->
-      <div id="bookreviews" class="recent-blog-text">
-        <br>
-        <br>
-        <br>
-        <ul>
-        <li>
-          <a href = "https://www.goodreads.com/review/show/3244008757?book_show_action=false&from_review_page=1"  style="color:#000000;">
-          (4/5) The Inevitable: Understanding the 12 Technological Forces That Will Shape Our Future
-          </a>
-        </li>
+<hr>
+
+<div id="bookreviews" class="recent-projects-text">
+    <h1 align = 'center'>Book Reviews</h1>
+    <div id = 'recent-projects'>
+        <h5 style="margin-top:10px;"><center>These are reviews/book summaries that I've also posted on <a href = "https://www.goodreads.com/review/list/2811757-prasanna?order=d&sort=review&view=reviews" style="color:#000000;"><b>Goodreads</b></a></h5>
+    </div>
+    <div id="blog">
+          <!--This is the START of the book reviews section-->
+          <div id="bookreviews" class="recent-blog-text">
+          <ul>  
+          <li><h6>
+            <a href = "https://www.goodreads.com/review/show/3244008757?book_show_action=false&from_review_page=1">
+            (4/5) The Inevitable: Understanding the 12 Technological Forces That Will Shape Our Future
+            </a></h6>
+          </li>
+          <li><h6>
+            <a href = "https://www.goodreads.com/review/show/3253550930?book_show_action=false&from_review_page=1">
+            (4/5) Moonwalking with Einstein: The Art and Science of Remembering Everything
+            </a></h6>
+          </li>
         </ul>
 
-       
-      <!--END of book reviews section-->
-    </div>
-
-  </div>
-
+      </div>  
+    <!--END of book reviews section-->
+</div>
 
 <div style="display: inline-block;" id="content">
   <!--This is the START of the contact section-->
