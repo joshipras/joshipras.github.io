@@ -309,11 +309,10 @@ a:hover {
   z-index:99
 }
 
+
 /* Links inside the navbar */
 .navbar a {
   float: right;
-  display: block;
-  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -325,6 +324,9 @@ a:hover {
   color: black;
 }
 
+.navbar .active > a {
+    color: red;
+}
 /* Main content */
 .main {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
@@ -675,9 +677,11 @@ Home Page CSS
 	padding-bottom: 0px;
 
 }
-#recent-blog-text {
+#recent-blog-text li ul h3 h5 h6 a{
 	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	text-align: center;
+    margin-left: 230px;
+
 }
 #recent-blog-text h5 {
 	padding-bottom: 0px;
