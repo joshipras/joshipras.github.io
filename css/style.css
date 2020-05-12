@@ -309,6 +309,22 @@ a:hover {
   z-index:99
 }
 
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-right {
+  float: right!important;
+}
+
 
 /* Links inside the navbar */
 .navbar a {
@@ -677,7 +693,7 @@ Home Page CSS
 	padding-bottom: 0px;
 
 }
-#recent-blog-text li ul h3 h5 h6 a{
+#recent-blog-text li ul h3 h6 a{
 	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	text-align: center;
     margin-left: 230px;
@@ -690,6 +706,15 @@ Home Page CSS
 	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	text-align: center;
 }
+
+#reviews-title h1{
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
+	text-align: center;
+	color: green;
+}
+
+
+
 .recent-gallery {
 	text-align: center;
 	margin-left: auto;
