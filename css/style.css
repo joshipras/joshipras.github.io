@@ -48,6 +48,8 @@ table {
   width: device-width ;
   zoom: 1.0 ;
 }
+
+
 /******************************************************************
 TEXT SELECTION STYLES
 ******************************************************************/
@@ -76,11 +78,18 @@ General CSS
 
 #content {
 	width: 1000px;
-	padding-top: 200px;
+	padding-top: 10px;
 	margin-left: 230px;
+	margin-right: 200px;
 	margin-bottom: 200px;
 	z-index: 1;
+
 }
+
+#content h1 {
+	text-align:center;
+}
+
 p {
 	font-family: 'Arvo';
 	line-height: 1.6em;
@@ -255,13 +264,14 @@ blockquote {
 a:hover {
 	color: black;
 }
-.spacer {
+.spacer p{
 	height: 1px;
 	clear: both;
 	border-bottom: 1px;
 	border-style: solid;
 	border-color: #d6d6d6;
 	margin: 20px 5px 20px 5px;
+	font-size: 12pt
 }
 .blank-spacer {
 	width: 720px;
@@ -346,6 +356,13 @@ a:hover {
 /* Main content */
 .main {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
 /******************************************************************
@@ -602,10 +619,9 @@ Home Page CSS
 	height: 200px;
 	margin-top: 10px;
 	float:left;
-	text-align: center;
-    margin-left: 230px;
-	justify-content: center;
+	
 }
+
 .section-description {
 	float: left;
 	width: 110px;
@@ -619,7 +635,7 @@ Home Page CSS
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
   	grid-gap: 20px;
-	width: 400px;
+	width: 300px;
 	display: inline;
 }
 .recent-item {
@@ -657,7 +673,6 @@ Home Page CSS
   grid-gap: 10px;
   grid-row-gap: 400px;
   grid-auto-rows: 80px;
-  margin-left: 230px;
   margin-top: 200px;
   margin-bottom: 0px;
   text-align:center;
@@ -710,7 +725,6 @@ Home Page CSS
 #reviews-title h1{
 	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	text-align: center;
-	color: green;
 }
 
 

@@ -77,66 +77,40 @@ $('#btn').on('click',function(){
 </script>
 </head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=1000">
 
 <body>
 
 <!--Go to top button-->
-<div id="topcontrol" style="position: static; bottom: 5px; left: 800px; opacity: 1; cursor: pointer;" title="Go to Top"></div>
+<div id="topcontrol" style="position: fixed; bottom: 5px; left: 960px; opacity: 1; cursor: pointer;" title="Go to Top"></div>
 
-<!--Top Navbar-->
-
-  <!--nav class="navbar navbar-expand-md fixed-top navbar-light" style="background-color: #F5F5F5;" role = "navigation">  
-     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-       <span class="navbar-toggler-icon"></span>
-     </button>
-      <div id = "navbarCollapse"> 
-        <ul><li> Home </li></ul>
-          <ul>
-              <li class="nav-item"> <a class="nav-link" href="index.html#header-text">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#timeline-title">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#recent-projects">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#recent-blog-text">Blog</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#bookreviews">Book Reviews</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-          </ul
-      </div>
-  </nav-->
-<nav id = "nav" class="navbar navbar-right
-                       navbar-light 
-                       ml-auto
-                       bg-faded fixed-top 
-                       navbar-toggleable-md 
-                       navbar-expand-md
-" style="background-color: #F5F5F5;">
+<!--Start of Top Navbar-->
+<nav id = "nav" class="navbar navbar-right navbar-light ml-auto
+                       bg-faded fixed-top navbar-toggleable-md 
+                       navbar-expand-md" style="background-color: #F5F5F5;">
   
-  <button id="btn" class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-              <li class="nav-item" > <a class="nav-link" href="index.html#header-text">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#timeline-title">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#recent-projects">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#recent-blog-text">Blog</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#bookreviews">Book Reviews</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-    </ul>
-  </div>
+    <button id="btn" class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item" > <a class="nav-link" href="index.html#header-text">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#timeline-title">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#recent-projects">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#recent-blog-text">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#bookreviews">Book Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
 </nav>
-
-
-
-</div>
-
 <!--End of Top Navbar-->
+
 
 <!--Name, Photo-->
 <div id="header-text">  
     <div id="logo"> 
         <br>
-        <a href="index.html"><img src="images/about/thumbs/me.jpg" width="160" height="150" alt="logo" align = "left" /></a> 
+        <a href="index.html"><img src="images/about/thumbs/me.jpg" width="160" height="150" alt="logo" align = "left"></a> 
     </div>
     
     <div id = "name">
@@ -149,7 +123,7 @@ $('#btn').on('click',function(){
 <!--End of Name, Photo-->
 
 
-<!--Social Media Box-->
+<!--Start of Social Media Box-->
 <div id="footer">
   <div id="social-box">
     <br>
@@ -163,60 +137,67 @@ $('#btn').on('click',function(){
 <!--End of Social Media Box-->
 
 
-<!--This is the START of the content-->
-<div id="content">
+<!--START of the content-->
+<div id="content" class = "content" style="padding-top: 200px">
     <br>
     <h6> I am a mathematical optimization enthusiast with professional experience in Data Science, Supply Chain Management and Lean Process Optimization. I completed my Master's in Operations Research from Northeastern University. I have worked in a variety of industries: mental health care, technology, pharmaceutical, investment research, automobile and manufacturing.</h6>
 </div>
 <!--END of content-->
 
 
-<!--This is the START of the Timeline-->
+<!--START of the Timeline-->
 <hr>
-<div id = 'timeline-title' class="container-title">
-    <h1 align = 'center'>Professional Experience </h1>
-</div>
+<div id="timeline" class = 'content'>
 
-<div id="timeline" style="position:relative; margin-left: 6cm; margin-right: 6cm; margin-top: 0px; margin-bottom: 0px">  
-	  <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1lkJh-npDMudFwIz0aP-2mmjw3NhazK5lWZR4y2jKDNo&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='600' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    <div id = 'timeline-title' class = "reviews-title">
+        <h1 align="center">Professional Experience </h1>
+    </div>
+
+    <div id="timeline" style="position:relative;margin-top: 10px; margin-bottom: 0px; margin-left: 230px; margin-right:200px">  
+    	  <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1lkJh-npDMudFwIz0aP-2mmjw3NhazK5lWZR4y2jKDNo&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='600' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    </div>
+
 </div>
-<!--This is the START of the Timeline-->
+<!--End of the Timeline-->
 
 
-<!--This is the START of Projects-->
-<div id = "portfolio" class = "reviews-title">
-    <br><hr>
-        <h1 align = 'center'>Projects</h1>
-</div>
-<br><br>
-<div id = 'recent-projects' class="recent-projects-container">
-    <div class="wrapper">
-        <div class="recent-summary">
-        <h4> MACD Tracker App <h4>  
-            <div class="recent-item"> <a class="single_image" href="https://prasannajoshi.shinyapps.io/currency-exchange-rate-tracker2/"><img src="images/portfolio/thumbs/macd.png" width="450" height="300" alt="recent2" /></a>
+<!--START of Projects-->
+<hr>
+<div id="content" class = 'content'>
+
+    <div id="recent-projects" class = "reviews-title">
+        <h1>Projects</h1>
+    </div>
+    <br><br>
+    <div id = 'recent-projects' class="recent-projects-container">
+        <div class="wrapper">
+            <div class="recent-summary">
+            <h4> MACD Tracker App <h4>  
+                <div class="recent-item"> <a class="single_image" href="https://prasannajoshi.shinyapps.io/currency-exchange-rate-tracker2/"><img src="images/portfolio/thumbs/macd.png" width="450" height="300" alt="recent2" /></a>
+                </div>
+            </div>    
+            <div class="recent-summary">
+            <h4> Image Classification with CNN <h4>  
+                <div class="recent-item"> <a class="single_image" href="https://github.com/joshipras/data-science-portfolio/blob/master/deep-learning/cnn.ipynb"><img src="images/portfolio/thumbs/f-mnist.png" width="450" height="300" alt="recent2" /></a>
+                </div>
+            </div> 
+            <div class="recent-summary">
+            <h4> Gradient Boosting Trees with Python <h4>  
+                <div class="recent-item"> <a class="single_image" href="https://github.com/joshipras/data-science-portfolio/blob/master/machine-learning/gbm.ipynb"><img src="images/portfolio/thumbs/bin_tree.jpg" width="350" height="300" alt="recent2" /></a>
+                </div>
+            </div> 
+            <div class="recent-summary">
+            <h4> Neural Networks from Scratch using Python <h4>  
+                <div class="recent-item"> <a class="single_image" href="https://github.com/joshipras/data-science-portfolio/blob/master/machine-learning/netural-networks.ipynb"><img src="images/portfolio/thumbs/nnets.jpeg" width="450" height="300" alt="recent2" /></a>
+                </div>
             </div>
-        </div>    
-        <div class="recent-summary">
-        <h4> Image Classification with CNN <h4>  
-            <div class="recent-item"> <a class="single_image" href="https://github.com/joshipras/data-science-portfolio/blob/master/deep-learning/cnn.ipynb"><img src="images/portfolio/thumbs/f-mnist.png" width="450" height="300" alt="recent2" /></a>
-            </div>
-        </div> 
-        <div class="recent-summary">
-        <h4> Gradient Boosting Trees with Python <h4>  
-            <div class="recent-item"> <a class="single_image" href="https://github.com/joshipras/data-science-portfolio/blob/master/machine-learning/gbm.ipynb"><img src="images/portfolio/thumbs/bin_tree.jpg" width="350" height="300" alt="recent2" /></a>
-            </div>
-        </div> 
-        <div class="recent-summary">
-        <h4> Neural Networks from Scratch using Python <h4>  
-            <div class="recent-item"> <a class="single_image" href="https://github.com/joshipras/data-science-portfolio/blob/master/machine-learning/netural-networks.ipynb"><img src="images/portfolio/thumbs/nnets.jpeg" width="450" height="300" alt="recent2" /></a>
-            </div>
+            <div></div>
         </div>
-        <div></div>
     </div>
 </div>
-<!--This is the End of Projects-->
+<!--End of Projects-->
 
-<!--This is the Start of Blog-->
+<!--Start of Blog-->
 <hr>
 <div id="content" class = 'content'>
     <div id="recent-blog-text" class = "reviews-title">
@@ -243,13 +224,17 @@ $('#btn').on('click',function(){
         </div>
     </div>
 </div>
+<!--End of Blog-->
 
+
+<!--START of the book reviews section-->
 <hr>
 
-<!--This is the START of the book reviews section-->
-<div id="content">
-    <div id="recent-blog-text" class = "reviews-title">
+<div id="content" class = 'content'>
+    <div id="bookreviews" class = "reviews-title">
         <h1>Book Reviews</h1>
+    </div>
+   
         <h5 align = 'center'>These are reviews/book summaries that I've also posted on <a href = "https://www.goodreads.com/review/list/2811757-prasanna?order=d&sort=review&view=reviews"><b>Goodreads</b></a></h5>
         <br>
         <div id="bookreviews" class="recent-blog-text" align = 'left'>
@@ -268,12 +253,13 @@ $('#btn').on('click',function(){
         </div>  
     </div>
 </div>
-<!--This is the END of the book reviews section-->
+<!--END of the book reviews section-->
 
 
+
+<!--START of the contact section-->
 <hr>
 
-<!--This is the START of the contact section-->
 <div style="display: inline-block;" id="content" class="recent-blog-text">
   <div id="contact">
     <h5 style="margin-top:10px;">Contact me</h5>
@@ -297,23 +283,9 @@ $('#btn').on('click',function(){
         </div>
       </div>
     </form>
-
-
-  <!--div style="display: inline-block;" id="contactinfo">
-    <h5>Location</h5>
-      <p>Greater Boston Area</p>
-      <br/>
-      <h5>Contact info is:</h5>
-      <p>E: joshi.pras@husky.neu.edu</p>
-      <p>T: (617) 860 8612</p>
-      <br/>
-    <div class="forrst"><a href="mailto:joshi.pras@husky.neu.edu" target="_top">joshi.pras@husky.neu.edu</a></div>
-    <div class="twitter_small"><a href="https://twitter.com/prasanna2">Follow on twitter</a></div>
   </div>
- <!--END of contact section-->
-  </div>
-
 </div>
+<!--End of the contact section-->
 
 
 
@@ -323,6 +295,5 @@ $('#btn').on('click',function(){
 
 
 </body>
-
 </html>
 
