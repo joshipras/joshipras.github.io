@@ -138,6 +138,8 @@ h6 {
 	text-decoration: none;
 	font-size: 10pt;
 }
+
+
 /***************************************************
 COLUMNS and FEATURES
 ***************************************************/
@@ -397,9 +399,8 @@ Header & Menu CSS
 	font-family: 'Arvo', Verdana, Arial, sans-serif;
 	position: absolute;
 	float: left;
-	width: 100%;
+	width: 70%;
 	margin-left: 170px;
-	padding: 0px 0 0 0px;
 }
 #header-text {
 	width: 480px;
@@ -668,11 +669,11 @@ Home Page CSS
 
 .wrapper {
   display: grid;
-  width:1100px;
+  width:1200px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   grid-row-gap: 400px;
-  grid-auto-rows: 80px;
+  grid-auto-rows: 40px;
   margin-top: 200px;
   margin-bottom: 0px;
   text-align:center;
