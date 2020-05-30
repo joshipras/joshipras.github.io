@@ -80,14 +80,15 @@ General CSS
 	width: 1000px;
 	padding-top: 10px;
 	margin-left: 230px;
-	margin-right: 200px;
-	margin-bottom: 200px;
+	margin-right: 20px;
+	margin-bottom: 100px;
 	z-index: 1;
 
 }
 
 #content h1 {
 	text-align:center;
+
 }
 
 p {
@@ -420,7 +421,7 @@ Header & Menu CSS
 	font-size: 7pt;
 }
 #social-box {
-	width: 96px;
+	width: 130px;
 	height: 22px;
 	position: absolute;
 	top: 200px;
@@ -619,6 +620,7 @@ Home Page CSS
 	width: 800px;
 	height: 200px;
 	margin-top: 10px;
+	margin-bottom: 100px;
 	float:left;
 	
 }
@@ -634,7 +636,7 @@ Home Page CSS
 }
 .recent-summary {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 2fr);
   	grid-gap: 20px;
 	width: 300px;
 	display: inline;
@@ -1162,18 +1164,18 @@ Contact CSS
 	float: left;
 	display: block;
 	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 #contactform .box {
 	width: 390px;
 	margin-bottom: 18px;
 	margin-top: 2px;
-	margin-left: 60px;
+	margin-left: 80px;
 }
 #contactform .msgbox {
 	margin-bottom: 18px;
 	margin-top: 2px;
-	margin-left: 60px;
+	margin-left: 80px;
 	width: 400px;
 }
 #contactform .message {
@@ -1195,7 +1197,7 @@ Contact CSS
 #contactform .submitbtn {
 	width: 120px;
 	padding-top: 15px;
-	margin-left: 60px;
+	margin-left: 0px;
 }
 .contactinformation .overline {
 	margin-bottom: 15px;
@@ -1235,7 +1237,7 @@ input, textarea {
 	padding: 5px;
 }
 input {
-	height: 20px;
+	height: 40px;
 }
 input:focus, textarea:focus, button:hover {
 	background: #fff;
@@ -1341,38 +1343,90 @@ This is the CSS for the social links
 	color: #444444;
 }
 
-@media (min-width: 858px) {
-    html {
-        font-size: 18px;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+	html {
+	        font-size: 24px;
+	    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+	html {
+        font-size: 24px;
     }
 }
 
-@media (min-width: 780px) {
-    html {
-        font-size: 14px;
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+	html {
+        font-size: 24px;
     }
 }
 
-@media (min-width: 702px) {
-    html {
-        font-size: 12px;
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+	html {
+        font-size: 24px;
     }
 }
 
-@media (min-width: 724px) {
-    html {
-        font-size: 20px;
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+	html {
+        font-size: 24px;
     }
 }
 
-@media (max-width: 623px) {
-    html {
-        font-size: 12px;
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+	html {
+        font-size: 24px;
     }
 }
 
-@media (max-width: 415px) {
-    html {
-        font-size: 20px;
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+	html {
+        font-size: 16px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+	html {
+        font-size: 16px;
+    }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+	html {
+        font-size: 16px;
     }
 }

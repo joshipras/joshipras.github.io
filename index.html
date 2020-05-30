@@ -77,7 +77,7 @@ $('#btn').on('click',function(){
 </script>
 </head>
 
-<meta name="viewport" content="width=1500">
+<meta name="viewport" content="width=1400">
 
 
 <body>
@@ -111,14 +111,14 @@ $('#btn').on('click',function(){
 <div id="header-text" class = "content">  
     <div id="logo"> 
         <br>
-        <a href="index.html"><img src="images/about/thumbs/me.jpg" width="160" height="150" alt="logo" align = "left"></a> 
+        <a href="index.html"><img src="images/about/thumbs/me.jpg" width="190" height="180" alt="logo"></a> 
+
     </div>
     
-    <div id = "name">
-        <br><br>
+    <div id = "name" style = "margin-left: 200px;">
+        <br>
         <h1> Prasanna Purushottam Joshi </h1> 
         <h3> Senior Data Analyst, Cohen Veterans Network </h3> 
-
     </div>    
 </div>
 <!--End of Name, Photo-->
@@ -128,10 +128,11 @@ $('#btn').on('click',function(){
 <div id="footer">
   <div id="social-box">
     <br>
+    <br>
     <ul>
-      <li><a href="https://www.linkedin.com/in/prasannajoshi1/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-      <li><a href="https://github.com/joshipras"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-      <li><a href="https://twitter.com/prasanna2"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/prasannajoshi1/"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:32px; color: #0099CC"></i></a></li>
+      <li><a href="https://github.com/joshipras"><i class="fa fa-github-square" aria-hidden="true" style="font-size:32px; color: #211F1F"></i></a></li>
+      <li><a href="https://twitter.com/prasanna2"><i class="fa fa-twitter-square" aria-hidden="true" style="font-size:32px; color: #1da1f2"></i></a></li>
     </ul>
   </div>
 </div>
@@ -140,6 +141,8 @@ $('#btn').on('click',function(){
 
 <!--START of the content-->
 <div id="content" class = "content" style="padding-top: 200px">
+    <br>
+    <br>
     <br>
     <h5> I am a mathematical optimization enthusiast with professional experience in Data Science, Supply Chain Management and Lean Process Optimization. I completed my Master's in Operations Research from Northeastern University. I have worked in a variety of industries: mental health care, technology, pharmaceutical, investment research, automobile and manufacturing.</h5>
 </div>
@@ -154,8 +157,8 @@ $('#btn').on('click',function(){
         <h1 align="center">Professional Experience </h1>
     </div>
 
-    <div id="timeline" style="position:relative;margin-top: 10px; margin-bottom: 0px; margin-left: 230px; margin-right:200px">  
-    	  <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1lkJh-npDMudFwIz0aP-2mmjw3NhazK5lWZR4y2jKDNo&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='600' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    <div id="timeline" style="position:relative; margin-left: 230px; margin-right: 200px">  
+    	  <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1lkJh-npDMudFwIz0aP-2mmjw3NhazK5lWZR4y2jKDNo&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='700' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
     </div>
 
 </div>
@@ -192,6 +195,12 @@ $('#btn').on('click',function(){
                 <div class="recent-item"> <a class="single_image" href="https://github.com/joshipras/data-science-portfolio/blob/master/machine-learning/netural-networks.ipynb"><img src="images/portfolio/thumbs/nnets.jpeg" width="450" height="300" alt="recent2" /></a>
                 </div>
             </div>
+            <div class="recent-summary">
+            <h4> Document Clustering Using Python<h4>  
+                <div class="recent-item"> <a class="single_image" href="https://github.com/joshipras/data-science-portfolio/blob/master/text-mining/document-clustering.ipynb"><img src="images/portfolio/thumbs/doc_clustering.png" width="450" height="300" alt="recent2" /></a>
+                </div>
+            </div>
+            <div></div>
             <div></div>
         </div>
     </div>
@@ -263,22 +272,22 @@ $('#btn').on('click',function(){
 
 <div style="display: inline-block;" id="content" class="recent-blog-text">
   <div id="contact">
-    <h5 style="margin-top:10px;">Contact me</h5>
-    <p>Write me a note and I will get back to you shortly</p>
+    <h5 style="margin-top:10px;margin-bottom:20px">Contact me</h5>
+    <h7 class = "text-muted">Write me a note and I will get back to you shortly</h7>
     <form name="contact" action="scripts/contact.php" id="contactform" method="post">
       <div class="boxes">
         <h5>name<span class="required">*</span></h5>
-        <div class="box">
+        <!--div class="box"-->
           <input name="name" type="text" class="input" id="sender_name" />
-        </div>
+        <!--/div-->
         <h5>email<span class="required">*</span></h5>
-        <div class="box">
+        <!--div class="box"-->
           <input name="email" type="text" class="input" id="sender_email" />
-        </div>
+        <!--/div-->
         <h5>message</h5>
-        <div class="msgbox">
+        <!--div class="msgbox"-->
           <textarea name="cf_message" rows="50" cols="20" class="message" id="cf_message"></textarea>
-        </div>
+        <!--/div-->
         <div class="submitbtn">
           <input type="submit" class="button btncolor" onClick="MM_validateForm('sender_name','','R');MM_validateForm('sender_email','','RisEmail');return document.MM_returnValue" value="Send Message" />
         </div>
