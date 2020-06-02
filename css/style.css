@@ -642,7 +642,6 @@ Home Page CSS
 	display: inline;
 }
 .recent-item {
-	padding-left: 40px;
 	float: left;
 	width: 260px;
 }
@@ -671,7 +670,7 @@ Home Page CSS
 
 .wrapper {
   display: grid;
-  width:1200px;
+  width:1000px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   grid-row-gap: 400px;
@@ -682,9 +681,8 @@ Home Page CSS
   align-items: center;
 }
 
-.wrapper h3 {
-  margin:0;
-
+.wrapper h4 {
+  margin-left:50px;
 }
 
 .item {
