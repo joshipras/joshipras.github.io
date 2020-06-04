@@ -401,7 +401,7 @@ Header & Menu CSS
 	position: absolute;
 	float: left;
 	width: 70%;
-	margin-left: 170px;
+	margin-left: 200px;
 }
 #header-text {
 	width: 480px;
@@ -789,6 +789,14 @@ About us CSS
 .team-text {
 	text-align: center;
 }
+
+
+.timeline {
+	position:relative; 
+	margin-left: 230px; 
+	margin-right: 200px
+}
+
 /******************************************************************
 Portfolio CSS
 ******************************************************************/
@@ -1421,10 +1429,45 @@ and (min-width : 1824px) {
 
 /* iPhone 4 ----------- */
 @media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
+only screen and (min-device-width : 80px) 
+and (max-device-width : 400px){
 /* Styles */
 	html {
-        font-size: 16px;
+        font-size: 24px;
     }
-}
+    #content {
+	width: 1200px;
+	padding-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 100px;
+	z-index: 1;
+	}
+
+	#name {
+	font-family: 'Arvo', Verdana, Arial, sans-serif;
+	position: absolute;
+	float: left;
+	width: 70%;
+	margin-left: 20px;
+	}
+
+	#social-box {
+	width: 130px;
+	height: 22px;
+	position: absolute;
+	top: 200px;
+	left: 20px;
+	}
+
+
+	.timeline {
+	position:relative; 
+	margin-left: 20px; 
+	margin-right: 200px
+	}
+
+	.logo {
+	margin-left: 2px;	
+	}
+
