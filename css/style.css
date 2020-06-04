@@ -1438,18 +1438,16 @@ and (max-device-width : 400px){
     #content {
 	width: 1200px;
 	padding-top: 10px;
-	margin-left: 20px;
+	margin-left: 50px;
 	margin-right: 20px;
 	margin-bottom: 100px;
 	z-index: 1;
 	}
 
-	#name {
+	#header-text {
 	font-family: 'Arvo', Verdana, Arial, sans-serif;
-	position: absolute;
-	float: left;
-	width: 70%;
-	margin-left: 20px;
+	margin-left: 50px;	
+
 	}
 
 	#social-box {
@@ -1457,17 +1455,29 @@ and (max-device-width : 400px){
 	height: 22px;
 	position: absolute;
 	top: 200px;
-	left: 20px;
+	left: 50px;
 	}
 
 
 	.timeline {
 	position:relative; 
-	margin-left: 20px; 
+	margin-left: 50px; 
 	margin-right: 200px
 	}
 
-	.logo {
-	margin-left: 2px;	
+	.wrapper {
+	  display: grid;
+	  width:1200px;
+	  grid-template-columns: repeat(2, 1fr);
+	  grid-gap: 20px;
+	  grid-row-gap: 500px;
+	  grid-auto-rows: 40px;
+	  margin-top: 200px;
+	  margin-bottom: 10px;
+	  text-align:center;
+	  align-items: center;
 	}
+
+
+	
 
